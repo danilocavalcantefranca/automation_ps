@@ -1,0 +1,9 @@
+*.html
+*.png
+.irb-history
+.DS_Store
+.byebug_history
+Gemfile.lock
+.vscodes
+.idea
+.vscode

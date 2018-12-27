@@ -1,0 +1,105 @@
+{
+	"idCompraBandeira": 98765433,
+	"idUnidadeNegocio": 3,
+	"idCanalVenda": "INT",
+	"idListaCompra": 0,
+	"data": "2018-01-18T03:37:00",
+	"tipoCompra": "NORMAL",
+	"status": {
+		"id": "PEN",
+		"descricao": "Pagamento pendente",
+		"dataPagamento": "2018-07-03T03:38:00"
+	},
+	"cliente": {
+		"nome": "Silva",
+		"sobrenome": "Santos",
+		"email": "silva@santos.com",
+		"sexo": "masculino",
+		"documento": "232257654",
+		"inscricaoEstadual": "",
+		"tipoPessoa": "0",
+		"dataNascimento": "1994-06-19T17:43:11.323Z",
+		"optanteSimplesNacional": false,
+		"classificacaoCliente": "NOR",
+		"telefones": 
+			[{
+				"tipo": "casa",
+				"numero": "999999999"
+			}]
+	},
+	"enderecos": 
+		{
+			"bairro": "Centro",
+			"cep": "09520010",
+			"complemento": "",
+			"estado": "SP",
+			"municipio": "São Caetano do Sul",
+			"numero": "83",
+			"pais": "BRA",
+			"receptor": "teste",
+			"referencia": "centro",
+			"rua": "Rua João Pessoa",
+			"tipo": "entrega"
+		},
+	"lojista": {
+		"id": 11077,
+		"nome": "eFácil",
+		"classificacao": "SLI",
+		"estado": "MG"
+	},                        	
+	"item": {
+	 "idGerencialMarketPlace": 9876543311077,
+	 "idEntrega": 9876543301,
+	 "repasse": {
+				"valor": 100,
+				"comissao": {
+						"origem": "contigencia_front",
+						"percentual": 13
+				}
+		},    
+		"tipoInventario": "PHY",
+		"unidadeMedida": "1",
+		"quantidade": 1,
+		"desconto": 0,
+		"precoDe": 20001,
+		"precoVenda": 20001,
+		"categorias": 
+			[{
+				"id": 1,
+				"nome": "Algo"
+			}],
+		"frete": {
+			"valor": 0,
+			"valorCobrado": 0,
+			"dataEstimadaEntrega": "2018-07-10T17:43:11.326Z",
+			"prazoEstimadoEntrega": 7,
+			"informacaoAdicional": "string",
+			"idCompraEntrega": 9876543301
+		},
+		"sku": {
+			"id": 1231231,
+			"idLojista": "teste_sku",
+			"marca": "sony",
+			"nome": "churrasco",
+			"tipo": "móvel"
+		},
+		"taxas": 
+			[{
+				"convenioEstados": 0,
+				"icms": {
+					"destino": 0,
+					"origem": 0
+				},
+				"iva": 0,
+				"simplesNacional": 0,
+				"st": 0
+			}]
+	},
+	"formasPagamentos" : 
+		{
+				"id" : 1, 
+				"tipo" : "CREDIT_CARD", 
+				"bandeira" : "Visa", 
+				"numeroParcelas" : 1
+		}
+}

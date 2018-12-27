@@ -1,0 +1,4 @@
+<% REPORT_NAME = "report-#{Time.now.strftime('%Y%m%d-%H%M%S')}.html"%>
+
+mp-compras-hlg: --color --format pretty ENVIRONMENT=HLG
+mp-compras-hlg-report: -p mp-compras-hlg --format html --out <%=REPORT_NAME%> SCREENSHOTSTEP=1 REPORT_NAME=<%= REPORT_NAME %>

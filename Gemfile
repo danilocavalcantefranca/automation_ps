@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'cucumber'
+gem 'rspec'
+gem 'rake'
+gem 'httparty'
+gem 'faker'
+gem 'pry'
+gem 'mongo'
+gem 'ruby-oci8'
+gem 'byebug'
+gem 'json-schema'

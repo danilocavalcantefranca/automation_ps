@@ -1,0 +1,6 @@
+{
+  "orderId": "string",
+  "skuId": "string",
+  "quantity": 0,
+  "reason": "string"
+}

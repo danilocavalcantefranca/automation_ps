@@ -1,0 +1,69 @@
+{
+    "trackings": [
+      {
+        "orderId": "584",
+        "paymentStep": true,
+        "orderItemId": [ 
+            "12345-2"
+            ],
+        "controlPoint": "ENT",
+        "extraDescription": "",
+        "occurenceDt": "2018-07-19T11:00:00.414Z",
+        "carrierName": "Correios",
+        "status": "string",
+        "statusDesc": "string",
+        "urlTracking": "http://tracking.totalexpress.com.br/tracking/0",
+        "url": "string",
+        "objectId": "PN584542157BR",
+        "originDeliveryId": "1984401ord1",
+        "nfe": "33444333",
+        "accessKeyNfe": "35170647960950089785550150008420471024959619",
+        "linkNfe": "http://www.nfe.fazenda.gov.br/portal/principal.aspx",
+        "serieNfe": "1",
+        "PaymentStep": false,
+        "cnpj": "58731662015739",	
+        "deliveryId": "string",
+        "skuIdOrigin": [
+          "string"
+        ],
+        "adjustedDeliveryDt": "2018-06-18T13:43:07.414Z",
+        "user": "string",
+        "ipAddrs": "string",
+        "siteId": 0,
+        "danfe": "string",
+        "carrierCnpj": "string",
+        "cteCode": "string",
+        "storeQualifierId":"11077",
+        "invoiceEmissionDate": "2018-06-18T13:43:07.414Z",
+        "deliveryOrderId": "string",
+        "mpOrders": [
+          {
+            "idMasterOrder": "string",
+            "installmentsQuantity": 0,
+            "itemCategoryHierarchy": "string",
+            "itemCategoryId": 0,
+            "itemDescription": "string",
+            "itemFreightChargedAmount": 0,
+            "itemQuantity": 0,
+            "itemSeq": "string",
+            "itemUnitPrice": 0,
+            "nsu": "string",
+            "orderDate": "string",
+            "orderId": "657806101",
+            "paymentApprovalDate": "string",
+            "paymentTpId": 0,
+            "referenceDate": "string",
+            "salesOriginId": 0,
+            "sellerId": "string",
+            "skuId": "string",
+            "stockIntegratedERP": true,
+            "summaryPaymentType": "string"
+          }
+        ]
+      }
+    ],
+    "startRow": 0,
+    "currentBatch": 0,
+    "totalBatches": 0,
+    "uploadTime": "2018-06-29T11:00:07.414Z"
+  }

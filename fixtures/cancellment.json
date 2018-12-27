@@ -1,0 +1,9 @@
+{
+  "CorrelationId": "7c73dd0b-50b2-47bd-9c63-841f4f697fb7",
+  "Topic": "marketplace-mp-compras-tracking",
+  "Key": "teste",
+  "Message": {
+      "Content": "{\"idCompraBandeira\": 12412459,\"motivo\": \"BILL\"}"
+  }
+}
+  

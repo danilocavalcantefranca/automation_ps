@@ -1,0 +1,8 @@
+{
+  "CorrelationId": "7c73dd0b-50b2-47bd-9c63-841f4f697fb7",
+  "Topic": "marketplace-mp-compras-tracking",
+  "Key": "teste",
+  "Message": {
+    "Content": "{\"idCompraBandeira\": 567179113,\"splitPagamento\": true, \"idPagamentoArranjo\":\"2312412412443234\", \"formasPagamentos\": [{\"id\": 1,\"tipo\": \"BILL\",\"bandeira\": \"Bradesco\",\"numeroParcelas\": 0}]}"
+  }
+}

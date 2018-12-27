@@ -1,0 +1,11 @@
+find_many_items: {"itens" : {"$size" :  1},"status.id" : "","entregas.tracking":{"$size" :3},"itens.quantidade" : 2,"data" : {"$gte" : ""}}
+find_order_status_cancellment: {"itens" : {"$size" :  1},"status.id" :"" ,"entregas.tracking":{"$size" :3},"itens.quantidade" : 1 ,"data" : {"$gte" :""}}
+find_seller_order_id: {"idCompraBandeira":""}
+find_order_with_status: {"status.id": "", "itens": {"$size":  1},"itens.quantidade": 1, "tipoCompra": "NORMAL", "lojista.id":  {"$ne": 11333} ,"lojista.id":  {"$ne": 3}}
+search_by_status: {"status.id" : ""}
+find_order_id: {"idPedido":""}
+find_notification: {"httpStatus": {"$ne": "200"}, "tipoIntegracao":"", "tentativas": {"$lt": 10}}
+find_order_id_notification: {"idPedido":"", "tipoIntegracao":""}
+find_type_integration: {"tipoIntegracao":""}
+find_order_with_sku: { "entregas":{"$size": 1}, "status.id":"", "itens.sku.id":"", "itens": {"$size":  1}, "itens.quantidade":2}
+find_order_two_items: {"entregas":{"$size": 1},"status.id":"","itens.0.sku.id":"", "itens.1.sku.id":""}

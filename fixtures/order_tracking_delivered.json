@@ -1,0 +1,8 @@
+{
+  "CorrelationId": "7c73dd0b-50b2-47bd-9c63-841f4f697fb7",
+  "Topic": "marketplace-mp-compras-tracking",
+  "Key": "teste",
+  "Message": {
+    "Content": "{\"idPedido\": \"\",\"idLojista\":\"\", \"idPedidoExterno\":\"\",\"idUnidadeNegocio\": 3,\"enviadoPor\": \"2312412412443234\", \"origem\":\"2312412412443234\",\"dataIntegracaoFront\": 567179113,\"dataLimiteCd\": \"2018-08-09T13:27:55.845Z\",\"ocorrencia\":{\"status\": \"\",\"descricao\": \"asdasd\",\"data\": \"2018-08-09T13:27:55.845Z\"},\"dataEntregaCorrigida\":\"2312412412443234\",\"dataEntregaPrometida\": 567179113,\"sroPostagem\": true, \"sroCorreios\":\"2312412412443234\",\"AlteradoPor\": \"2312412412443234\"}"
+  }
+}

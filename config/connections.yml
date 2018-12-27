@@ -1,0 +1,10 @@
+mp-compras:
+  mongo-hlg:
+    name: 'mp-compras'
+    replica_set: 
+    user: 
+    pass: 
+  slhlg:
+    user: 
+    password: 
+    connection_string: 

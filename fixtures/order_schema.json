@@ -1,0 +1,1009 @@
+{
+  "definitions": {},
+  "type": "object",
+  "required": [
+    "_id",
+    "id",
+    "dataCriacaoDocumento",
+    "dataModificacaoDocumento",
+    "idCompraBandeira",
+    "idUnidadeNegocio",
+    "idCanalVenda",
+    "data",
+    "valor",
+    "valorFrete",
+    "desconto",
+    "valorTotal",
+    "splitPagamento",
+    "tipoCompra",
+    "status",
+    "frete",
+    "cliente",
+    "enderecos",
+    "lojista",
+    "itens",
+    "entregas",
+    "formasPagamentos"
+  ],
+  "properties": {
+    "_id": {
+      "type": "integer",
+      "title": "The _id Schema",
+      "default": 0,
+      "examples": [
+        16000003193
+      ]
+    },
+    "id": {
+      "type": "integer",
+      "title": "The Id Schema",
+      "default": 0,
+      "examples": [
+        16000002641
+      ]
+    },
+    "dataCriacaoDocumento": {
+      "type": "string",
+      "title": "The Datacriacaodocumento Schema",
+      "default": "",
+      "examples": [
+        "2018-10-10T18:11:06.470-03:00"
+      ],
+      "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+    },
+    "dataModificacaoDocumento": {
+      "type": "string",
+      "title": "The Datamodificacaodocumento Schema",
+      "default": "",
+      "examples": [
+        "2018-10-10T18:11:06.470-03:00"
+      ],
+      "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+    },
+    "idCompraBandeira": {
+      "type": "integer",
+      "title": "The Idcomprabandeira Schema",
+      "default": 0,
+      "examples": [
+        147152869
+      ]
+    },
+    "idUnidadeNegocio": {
+      "type": "integer",
+      "title": "The Idunidadenegocio Schema",
+      "default": 0,
+      "examples": [
+        3
+      ]
+    },
+    "idCanalVenda": {
+      "type": "string",
+      "title": "The Idcanalvenda Schema",
+      "default": "",
+      "examples": [
+        "SITE"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "data": {
+      "type": "string",
+      "title": "The Data Schema",
+      "default": "",
+      "examples": [
+        "2018-10-10T18:11:06.470-03:00"
+      ],
+      "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+    },
+    "valor": {
+      "type": "number",
+      "title": "The Valor Schema",
+      "default": 0.0,
+      "examples": [
+        111.99
+      ]
+    },
+    "valorFrete": {
+      "type": "number",
+      "title": "The Valorfrete Schema",
+      "default": 0.0,
+      "examples": [
+        10.47
+      ]
+    },
+    "desconto": {
+      "type": "number",
+      "title": "The Desconto Schema",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "valorTotal": {
+      "type": "number",
+      "title": "The Valortotal Schema",
+      "default": 0.0,
+      "examples": [
+        122.46
+      ]
+    },
+    "splitPagamento": {
+      "type": "boolean",
+      "title": "The Splitpagamento Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "idPagamentoArranjo": {
+      "type": "string",
+      "title": "The Idpagamentoarranjo Schema",
+      "default": "",
+      "examples": [
+        "de99f1a2-cf83-4e43-9fe2-bad1a751430a"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "tipoCompra": {
+      "type": "string",
+      "title": "The Tipocompra Schema",
+      "default": "",
+      "examples": [
+        "NORMAL"
+      ],
+      "pattern": "\\bNORMAL|\\bATACADO|\\bSERVICO|\\bPRESENT"
+    },
+    "status": {
+      "type": "object",
+      "title": "The Status Schema",
+      "required": [
+        "id",
+        "descricao",
+        "dataPagamento"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "The Id Schema",
+          "default": "",
+          "examples": [
+            "PAY"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "descricao": {
+          "type": "string",
+          "title": "The Descricao Schema",
+          "default": "",
+          "examples": [
+            "Pagamento aprovado"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "dataPagamento": {
+          "type": "string",
+          "title": "The Datapagamento Schema",
+          "default": "",
+          "examples": [
+            "2018-10-10T18:11:06.470-03:00"
+          ],
+          "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+        }
+      }
+    },
+    "frete": {
+      "type": "object",
+      "title": "The Frete Schema",
+      "required": [
+        "valor",
+        "valorCobrado",
+        "prazoEstimadoEntrega",
+        "informacaoAdicional"
+      ],
+      "properties": {
+        "valor": {
+          "type": "number",
+          "title": "The Valor Schema",
+          "default": 0.0,
+          "examples": [
+            10.47
+          ]
+        },
+        "valorCobrado": {
+          "type": "number",
+          "title": "The Valorcobrado Schema",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "prazoEstimadoEntrega": {
+          "type": "string",
+          "title": "The Prazoestimadoentrega Schema",
+          "default": "",
+          "examples": [
+            "40"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "informacaoAdicional": {
+          "type": "string",
+          "title": "The Informacaoadicional Schema",
+          "default": "",
+          "examples": [
+            "Transportadora"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "cliente": {
+      "type": "object",
+      "title": "The Cliente Schema",
+      "required": [
+        "nome",
+        "sobrenome",
+        "email",
+        "sexo",
+        "documento",
+        "tipoPessoa",
+        "optanteSimplesNacional",
+        "classificacaoCliente",
+        "telefones"
+      ],
+      "properties": {
+        "nome": {
+          "type": "string",
+          "title": "The Nome Schema",
+          "default": "",
+          "examples": [
+            "Teste"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "sobrenome": {
+          "type": "string",
+          "title": "The Sobrenome Schema",
+          "default": "",
+          "examples": [
+            "Arranjo"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "email": {
+          "type": "string",
+          "title": "The Email Schema",
+          "default": "",
+          "examples": [
+            "teste@arranjo.com.br"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "sexo": {
+          "type": "string",
+          "title": "The Sexo Schema",
+          "default": "",
+          "examples": [
+            "M"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "documento": {
+          "type": "string",
+          "title": "The Documento Schema",
+          "default": "",
+          "examples": [
+            "937.314.600-92"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "tipoPessoa": {
+          "type": "string",
+          "title": "The Tipopessoa Schema",
+          "default": "",
+          "examples": [
+            "0"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "optanteSimplesNacional": {
+          "type": "boolean",
+          "title": "The Optantesimplesnacional Schema",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "classificacaoCliente": {
+          "type": "string",
+          "title": "The Classificacaocliente Schema",
+          "default": "",
+          "examples": [
+            "normal"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "telefones": {
+          "type": "array",
+          "title": "The Telefones Schema",
+          "items": {
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "tipo",
+              "numero"
+            ],
+            "properties": {
+              "tipo": {
+                "type": "string",
+                "title": "The Tipo Schema",
+                "default": "",
+                "examples": [
+                  "celular"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "numero": {
+                "type": "string",
+                "title": "The Numero Schema",
+                "default": "",
+                "examples": [
+                  "11942256058"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "enderecos": {
+      "type": "array",
+      "title": "The Enderecos Schema",
+      "items": {
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "tipo",
+          "pais",
+          "estado",
+          "municipio",
+          "bairro",
+          "rua",
+          "numero",
+          "cep",
+          "receptor"
+        ],
+        "properties": {
+          "tipo": {
+            "type": "string",
+            "title": "The Tipo Schema",
+            "default": "",
+            "examples": [
+              "Entrega"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "pais": {
+            "type": "string",
+            "title": "The Pais Schema",
+            "default": "",
+            "examples": [
+              "BRA"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "estado": {
+            "type": "string",
+            "title": "The Estado Schema",
+            "default": "",
+            "examples": [
+              "SP"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "municipio": {
+            "type": "string",
+            "title": "The Municipio Schema",
+            "default": "",
+            "examples": [
+              "São Caetano do Sul"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "bairro": {
+            "type": "string",
+            "title": "The Bairro Schema",
+            "default": "",
+            "examples": [
+              "Centro"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "rua": {
+            "type": "string",
+            "title": "The Rua Schema",
+            "default": "",
+            "examples": [
+              "Rua João Pessoa"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "numero": {
+            "type": "string",
+            "title": "The Numero Schema",
+            "default": "",
+            "examples": [
+              "98"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "complemento": {
+            "type": "string",
+            "title": "The Complemento Schema",
+            "default": "",
+            "examples": [
+              ""
+            ],
+            "pattern": "^(.*)$"
+          },
+          "cep": {
+            "type": "string",
+            "title": "The Cep Schema",
+            "default": "",
+            "examples": [
+              "09520010"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "receptor": {
+            "type": "string",
+            "title": "The Receptor Schema",
+            "default": "",
+            "examples": [
+              "Teste"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "referencia": {
+            "type": "string",
+            "title": "The Referencia Schema",
+            "default": "",
+            "examples": [
+              "Casas Bahia"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    },
+    "lojista": {
+      "type": "object",
+      "title": "The Lojista Schema",
+      "required": [
+        "id",
+        "nome",
+        "classificacao",
+        "estado"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "The Id Schema",
+          "default": 0,
+          "examples": [
+            10172
+          ]
+        },
+        "nome": {
+          "type": "string",
+          "title": "The Nome Schema",
+          "default": "",
+          "examples": [
+            "Mobly"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "classificacao": {
+          "type": "string",
+          "title": "The Classificacao Schema",
+          "default": "",
+          "examples": [
+            "3"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "estado": {
+          "type": "string",
+          "title": "The Estado Schema",
+          "default": "",
+          "examples": [
+            "SP"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "itens": {
+      "type": "array",
+      "minimum": 1,
+      "title": "The Itens Schema",
+      "items": {
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "tipoInventario",
+          "unidadeMedida",
+          "quantidade",
+          "desconto",
+          "precoDe",
+          "precoVenda",
+          "repasse",
+          "categorias",
+          "frete",
+          "sku"
+        ],
+        "properties": {
+          "tipoInventario": {
+            "type": "string",
+            "title": "The Tipoinventario Schema",
+            "default": "",
+            "examples": [
+              "PHY"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "unidadeMedida": {
+            "type": "string",
+            "title": "The Unidademedida Schema",
+            "default": "",
+            "examples": [
+              "PIECE"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "quantidade": {
+            "type": "integer",
+            "title": "The Quantidade Schema",
+            "default": 0,
+            "examples": [
+              1
+            ]
+          },
+          "desconto": {
+            "type": "double",
+            "title": "The Desconto Schema",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "precoDe": {
+            "type": "number",
+            "title": "The Precode Schema",
+            "default": 0.0,
+            "examples": [
+              101.99
+            ]
+          },
+          "precoVenda": {
+            "type": "number",
+            "title": "The Precovenda Schema",
+            "default": 0.0,
+            "examples": [
+              111.99
+            ]
+          },
+          "repasse": {
+            "type": "object",
+            "title": "The Repasse Schema",
+            "required": [
+              "valor",
+              "comissao"
+            ],
+            "properties": {
+              "valor": {
+                "type": "number",
+                "title": "The Valor Schema",
+                "default": 0.0,
+                "examples": [
+                  96.74
+                ]
+              },
+              "comissao": {
+                "type": "object",
+                "title": "The Comissao Schema",
+                "required": [
+                  "origem",
+                  "percentual",
+                  "valorComissao"
+                ],
+                "properties": {
+                  "origem": {
+                    "type": "string",
+                    "title": "The Origem Schema",
+                    "default": "",
+                    "examples": [
+                      "MAIOR_VALOR_CUSTOMIZADO"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "percentual": {
+                    "type": "integer",
+                    "title": "The Percentual Schema",
+                    "default": 0,
+                    "examples": [
+                      21
+                    ]
+                  },
+                  "valorComissao": {
+                    "type": "number",
+                    "title": "The Valorcomissao Schema",
+                    "default": 0.0,
+                    "examples": [
+                      25.72
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "categorias": {
+            "type": "array",
+            "minimum": 1,
+            "title": "The Categorias Schema",
+            "items": {
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "id",
+                "nome"
+              ],
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "title": "The Id Schema",
+                  "default": 0,
+                  "examples": [
+                    2004
+                  ]
+                },
+                "nome": {
+                  "type": "string",
+                  "title": "The Nome Schema",
+                  "default": "",
+                  "examples": [
+                    "Sala"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          },
+          "frete": {
+            "type": "object",
+            "title": "The Frete Schema",
+            "required": [
+              "valor",
+              "dataEstimadaEntrega"
+            ],
+            "properties": {
+              "valor": {
+                "type": "number",
+                "title": "The Valor Schema",
+                "default": 0.0,
+                "examples": [
+                  10.47
+                ]
+              },
+              "dataEstimadaEntrega": {
+                "type": "string",
+                "title": "The Dataestimadaentrega Schema",
+                "default": "",
+                "examples": [
+                  "2018-12-11T11:00:00.000-03:00"
+                ],
+                "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+              },
+              "prazoEstimadoEntrega": {
+                "type": "string",
+                "title": "The Prazoestimadoentrega Schema",
+                "default": "",
+                "examples": [
+                  "40"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "sku": {
+            "type": "object",
+            "title": "The Sku Schema",
+            "required": [
+              "id",
+              "idLojista",
+              "nome",
+              "tipo",
+              "marca"
+            ],
+            "properties": {
+              "id": {
+                "type": "integer",
+                "title": "The Id Schema",
+                "default": 0,
+                "examples": [
+                  30804009
+                ]
+              },
+              "idLojista": {
+                "type": "string",
+                "title": "The Idlojista Schema",
+                "default": "",
+                "examples": [
+                  "10172"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "nome": {
+                "type": "string",
+                "title": "The Nome Schema",
+                "default": "",
+                "examples": [
+                  "Cortina Microfibra Khaki 280X180 Marka Textil Cinza"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "tipo": {
+                "type": "string",
+                "title": "The Tipo Schema",
+                "default": "",
+                "examples": [
+                  "NOR"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "marca": {
+                "type": "string",
+                "title": "The Marca Schema",
+                "default": "",
+                "examples": [
+                  "Marka Têxtil"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "entregas": {
+      "type": "array",
+      "title": "The Entregas Schema",
+      "items": {
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "idCompraEntrega",
+          "idEntrega",
+          "tipo",
+          "valorTotal",
+          "valorTotalDesconto",
+          "juros",
+          "itens",
+          "tracking"
+        ],
+        "properties": {
+          "idCompraEntrega": {
+            "type": "integer",
+            "title": "The Idcompraentrega Schema",
+            "default": 0,
+            "examples": [
+              147152869011017200
+            ]
+          },
+          "idEntrega": {
+            "type": "integer",
+            "title": "The Identrega Schema",
+            "default": 0,
+            "examples": [
+              14715286901
+            ]
+          },
+          "tipo": {
+            "type": "string",
+            "title": "The Tipo Schema",
+            "default": "",
+            "examples": [
+              "NORMAL"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "valorTotal": {
+            "type": "number",
+            "title": "The Valortotal Schema",
+            "default": 0.0,
+            "examples": [
+              122.46
+            ]
+          },
+          "valorTotalDesconto": {
+            "type": "number",
+            "title": "The Valortotaldesconto Schema",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "juros": {
+            "type": "number",
+            "title": "The Juros Schema",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "itens": {
+            "type": "array",
+            "title": "The Itens Schema",
+            "items": {
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "sku",
+                "quantidade",
+                "desconto"
+              ],
+              "properties": {
+                "sku": {
+                  "type": "integer",
+                  "title": "The Sku Schema",
+                  "default": 0,
+                  "examples": [
+                    30804009
+                  ]
+                },
+                "quantidade": {
+                  "type": "integer",
+                  "title": "The Quantidade Schema",
+                  "default": 0,
+                  "examples": [
+                    1
+                  ]
+                },
+                "desconto": {
+                  "type": "number",
+                  "title": "The Desconto Schema",
+                  "default": 0,
+                  "examples": [
+                    0
+                  ]
+                }
+              }
+            }
+          },
+          "tracking": {
+            "type": "array",
+            "title": "The Tracking Schema",
+            "items": {
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "codigo",
+                "data",
+                "passo",
+                "titulo",
+                "mensagem",
+                "fase"
+              ],
+              "properties": {
+                "codigo": {
+                  "type": "string",
+                  "title": "The Codigo Schema",
+                  "default": "",
+                  "examples": [
+                    "PEI"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "data": {
+                  "type": "string",
+                  "title": "The Data Schema",
+                  "default": "",
+                  "examples": [
+                    "2018-10-10T18:11:06.470-03:00"
+                  ],
+                  "pattern": "^([\\+-]?\\d{4}(?!\\d{2}\b))((-?)((0[1-9]|1[0-2])(\\3([12]\\d|0[1-9]|3[01]))?|W([0-4]\\d|5[0-2])(-?[1-7])?|(00[1-9]|0[1-9]\\d|[12]\\d{2}|3([0-5]\\d|6[1-6])))([T\\s]((([01]\\d|2[0-3])((:?)[0-5]\\d)?|24\\:?00)([\\.,]\\d+(?!:))?)?(\\17[0-5]\\d([\\.,]\\d+)?)?([zZ]|([\\+-])([01]\\d|2[0-3]):?([0-5]\\d)?)?)?)?$"
+                },
+                "passo": {
+                  "type": "string",
+                  "title": "The Passo Schema",
+                  "default": "",
+                  "examples": [
+                    "ORD"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "titulo": {
+                  "type": "string",
+                  "title": "The Titulo Schema",
+                  "default": "",
+                  "examples": [
+                    "Pedido incluso"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "mensagem": {
+                  "type": "string",
+                  "title": "The Mensagem Schema",
+                  "default": "",
+                  "examples": [
+                    "Confirmamos a inclusão do seu pedido em nosso sistema."
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "fase": {
+                  "type": "string",
+                  "title": "The Fase Schema",
+                  "default": "",
+                  "examples": [
+                    "FNH"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "formasPagamentos": {
+      "type": "array",
+      "title": "The Formaspagamentos Schema",
+      "items": {
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "id",
+          "bandeira",
+          "numeroParcelas",
+          "tipo"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "title": "The Id Schema",
+            "default": 0,
+            "examples": [
+              1
+            ]
+          },
+          "bandeira": {
+            "type": "string",
+            "title": "The Bandeira Schema",
+            "default": "",
+            "examples": [
+              "Cartão de Crédito Visa "
+            ],
+            "pattern": "^(.*)$"
+          },
+          "numeroParcelas": {
+            "type": "integer",
+            "title": "The Numeroparcelas Schema",
+            "default": 0,
+            "examples": [
+              1
+            ]
+          },
+          "tipo": {
+            "type": "string",
+            "title": "The Tipo Schema",
+            "default": "",
+            "examples": [
+              "Credito"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}

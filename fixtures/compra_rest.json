@@ -1,0 +1,92 @@
+{
+	"idCompraBandeira": 6680947,
+	"idUnidadeNegocio": 8,
+	"idCanalVenda": 3,
+	"idListaCompra": null,
+	"data": "2018-01-18T03:37:00",
+	"tipoCompra": "NORMAL",
+	"status": {
+		"dataPagamento": "2018-07-03T03:38:00",
+		"descricao": "Aguardando Pagamento",
+		"id": "PEN"
+	},
+	"cliente": {
+		"classificacaoCliente": "normal",
+		"dataNascimento": null,
+		"documento": "490.451.230-88",
+		"email": "thiago01@teste.com",
+		"inscricaoEstadual": null,
+		"nome": "Thiago",
+		"optanteSimplesNacional": false,
+		"sexo": "M",
+		"sobrenome": "Teste",
+		"telefones": [{
+				"numero": "11908123765",
+				"tipo": "celular"
+			}],
+		"tipoPessoa": 0
+	},
+	"enderecos": {
+			"bairro": "Centro",
+			"cep": "09520010",
+			"complemento": "",
+			"estado": "SP",
+			"municipio": "São Caetano do Sul",
+			"numero": "83",
+			"pais": "BRA",
+			"receptor": "teste",
+			"referencia": "centro",
+			"rua": "Rua João Pessoa",
+			"tipo": "Entrega"
+		},
+	"lojista": {
+		"classificacao": "3",
+		"estado": "MG",
+		"id": 11077,
+		"nome": "eFácil"
+	},
+	"item": {
+    "idGerencialMarketPlace": 0,
+    "idEntrega": 0,
+    "tipoInventario": "string",
+    "unidadeMedida": "string",
+    "quantidade": 1,
+    "desconto": 0,
+    "precoDe": 10,
+    "precoVenda": 10,
+    "repasse": {
+      "comissao": {
+        "origem": "string",
+        "percentual": 0
+      },
+      "valor": 0
+    },
+    "categorias": 
+      [{
+        "id": 1,
+        "nome": "string"
+      }],
+    "frete": {
+      "valor": 0,
+      "valorCobrado": 0,
+      "dataEstimadaEntrega": "2018-07-03T16:59:39.347Z",
+      "prazoEstimadoEntrega": "string",
+      "informacaoAdicional": "string",
+      "idCompraEntrega": 668094702
+    },
+    "sku": {
+      "id": 123455,
+      "idLojista": "11077",
+      "marca": "string",
+      "nome": "string",
+      "tipo": "string"
+    }
+  },
+	"formasPagamentos": {
+		"id": 1,
+		"idTipo": 0,
+		"tipo": "string",
+		"bandeira": "string",
+		"numeroParcelas": 0
+	}
+}
